@@ -1,0 +1,46 @@
+#include "day${DAY}.h"
+
+#include <fstream>
+#include <vector>
+#include <string>
+#include "util.h"
+
+using Input = std::vector<std::string>;
+
+namespace
+{
+	Input readInput(std::string file)
+	{
+		std::ifstream in(file);
+
+		Input res;
+		std::string line;
+		while (std::getline(in, line)) {
+			res.push_back(line);
+		}
+
+		return res;
+	}
+
+
+	int process1(Input input)
+	{
+		int res = 0;
+
+		return res;
+	}
+
+	int process2(Input input)
+	{
+		int res = 0;
+
+		return res;
+	}
+}
+
+std::pair<int, int> day${DAY}()
+{
+    auto input = readInput("inputs/day${DAY}.txt");
+	
+    return {process1(input), process2(input)};
+}
